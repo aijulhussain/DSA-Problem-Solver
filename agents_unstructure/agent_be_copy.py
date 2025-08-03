@@ -17,7 +17,7 @@ model_client = OllamaChatCompletionClient(model="llama3.2")
 
 async def main():
     docker = DockerCommandLineCodeExecutor(
-        work_dir='/tmp',
+        work_dir='temp',
         timeout=120
         # auto_remove= False
     )

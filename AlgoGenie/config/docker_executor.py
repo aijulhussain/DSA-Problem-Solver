@@ -12,3 +12,5 @@ def get_docker_executor():
         timeout=TIMEOUT
     )
     return docker_executor
+
+executor = get_docker_executor()

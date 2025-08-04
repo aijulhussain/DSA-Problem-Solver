@@ -1,7 +1,11 @@
-
+code = '''
 def add_numbers(num1, num2):
     return num1 + num2
 
 print(add_numbers(5, 3)) # Expected output: 8
 print(add_numbers(-1, 4)) # Expected output: 3
 print(add_numbers(0, 2)) # Expected output: 2
+'''
+with open('solution.py', 'w') as f:
+    f.write(code)
+    print("Code saved successfully in solution.py")

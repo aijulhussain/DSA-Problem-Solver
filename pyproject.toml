@@ -10,5 +10,6 @@ dependencies = [
     "autogen-core>=0.7.1",
     "autogen-ext[docker]>=0.7.1",
     "ollama>=0.5.1",
+    "streamlit>=1.47.1",
     "tiktoken>=0.9.0",
 ]

@@ -1,0 +1,52 @@
+def multiply_matrices(A, B):
+    if len(A[0]) != len(B):
+        raise ValueError("Matrices cannot be multiplied")
+    
+    result = [[0 for _ in range(len(B[0]))] for _ in range(len(A))]
+    
+    for i in range(len(A)):
+        for j in range(len(B[0])):
+            for k in range(len(B)):
+                result[i][j] += A[i][k] * B[k][j]
+    
+    return result
+
+# Test cases
+A = [[1, 2], [3, 4]]
+B = [[5, 6], [7, 8]]
+print("Matrix A:")
+for row in A:
+    print(row)
+print("\nMatrix B:")
+for row in B:
+    print(row)
+print("\nResult:")
+for row in multiply_matrices(A, B):
+    print(row)
+
+A = [[1, 2, 3], [4, 5, 6]]
+B = [[7, 8], [9, 10], [11, 12]]
+print("\nMatrix A:")
+for row in A:
+    print(row)
+print("\nMatrix B:")
+for row in B:
+    print(row)
+print("\nResult:")
+for row in multiply_matrices(A, B):
+    print(row)
+
+A = [[1, 2], [3, 4], [5, 6]]
+B = [[7, 8], [9, 10], [11, 12]]
+try:
+    print("Matrix A:")
+    for row in A:
+        print(row)
+    print("\nMatrix B:")
+    for row in B:
+        print(row)
+    print("\nResult:")
+    for row in multiply_matrices(A, B):
+        print(row)
+except ValueError as e:
+    print(e)

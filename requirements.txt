@@ -4,4 +4,6 @@ autogen_ext
 asyncio
 ollama
 tiktoken
-"autogen-ext[docker]"
+
+autogen-ext[docker]
+streamlit

@@ -13,4 +13,4 @@ def get_docker_executor():
     )
     return docker_executor
 
-executor = get_docker_executor()
+# executor = get_docker_executor()
